@@ -1,9 +1,8 @@
 [package]
-
+authors = ["Peter Atashian <retep998@gmail.com>"]
 name = "benchmem"
 version = "0.0.1"
-authors = ["Peter Atashian <retep998@gmail.com>"]
 
-[dependencies.winapi]
-
-git = "https://github.com/retep998/winapi-rs.git"
+[dependencies]
+kernel32-sys = "0.2.1"
+winapi = "0.2.5"

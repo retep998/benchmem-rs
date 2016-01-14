@@ -2,11 +2,26 @@
 name = "benchmem"
 version = "0.0.1"
 dependencies = [
- "winapi 0.0.1 (git+https://github.com/retep998/winapi-rs.git#c2d941738b7b57b666f079b6a6878e0ccf330fe7)",
+ "kernel32-sys 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "kernel32-sys"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "winapi 0.2.5 (registry+https://github.com/rust-lang/crates.io-index)",
+ "winapi-build 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
 name = "winapi"
-version = "0.0.1"
-source = "git+https://github.com/retep998/winapi-rs.git#c2d941738b7b57b666f079b6a6878e0ccf330fe7"
+version = "0.2.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "winapi-build"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
